@@ -7,10 +7,13 @@ public class Quiz64 {
         System.out.print("enter number:");
         int number = input.nextInt();
         reverse(number);
+
+        input.close();
     }
 
     public static void reverse(int number){
-        //int copy = number;
+        int output = 0;  //a variable recording output times
+
         if (number == 0){
             System.out.print(number);
         }
@@ -18,7 +21,15 @@ public class Quiz64 {
         while(number != 0){
             int mod = number % 10;
             number = number / 10;
-            System.out.print(mod);
+
+            if (mod != 0) {
+                System.out.print(mod);
+                output++;
+            }
+            else if (mod == 0 && output != 0){
+                System.out.print(mod);
+                output++;
+            }
         }
     }
 }

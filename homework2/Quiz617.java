@@ -7,6 +7,8 @@ public class Quiz617 {
         System.out.print("enter n:");
         int n = input.nextInt();
         printMatrix(n);
+
+        input.close();
     }
 
     public static void printMatrix(int n){

@@ -13,6 +13,8 @@ public class Quiz710 {
 
         int minIndex = indexOfSmallestElement(array);
         System.out.println("index of minimum number is " + minIndex);
+
+        input.close();
     }
 
     public static int indexOfSmallestElement(double[] array){
