@@ -5,7 +5,7 @@ import java.security.MessageDigest;
 
 public class FolderHash {
     public static void main(String[] args) {
-        String path = "C:\\Users\\annay\\Desktop\\TEMP";
+        String path = "";
         byte[] sha1 = folderHash(path);
 
         //打印哈希值
